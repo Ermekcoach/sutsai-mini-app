@@ -13,7 +13,7 @@ ROOT = BASE_DIR.parent
 DB_PATH = Path(os.getenv('DB_PATH', ROOT / 'data' / 'users.db'))
 DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 BRAND_NAME = os.getenv('BRAND_NAME', 'Ермек Исламович')
-CONSULTATION_LINK = os.getenv('CONSULTATION_LINK', 'https://t.me/your_username')
+CONSULTATION_LINK = os.getenv('CONSULTATION_LINK', 'https://t.me/ermekcoach_bot')
 
 app.mount('/static', StaticFiles(directory=BASE_DIR / 'static'), name='static')
 
